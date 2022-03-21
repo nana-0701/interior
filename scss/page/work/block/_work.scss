@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+  .work {
+    &__box {
+      padding-top: 14rem;
+      margin: -14rem 0 24rem;
+      @include g.mq('sp') {
+        padding-top: 7rem;
+        margin: -7rem 0 5rem;
+      }
+      &:nth-of-type(3) {
+        margin-bottom: 16rem;
+        @include g.mq('sp') {
+          margin-bottom: 6rem;
+        }  
+      }
+    }
+    
+    &__list {
+      width: 100%;
+      position: relative;
+    }
+    &__list--flex {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      @include g.mq('sp') {
+        display: block;
+      }
+    }
+    
+    @at-root %before {
+      content: "Business";
+      display: block; 
+      font-size: 13rem;
+      color: #f8f8f8f1;
+      position: absolute;
+      top: -6%;
+      line-height: 1;
+      text-shadow: 20px 20px 10px rgb(236, 236, 236);
+      width: 40%;
+      z-index: map-get(g.$z, bg);
+      @media screen and (max-width: 1179px) {
+        content: none;
+      }
+    }
+    &__list::before {
+      @extend %before;
+      right: 1%;
+    }
+    &__list--flex::before {
+      @extend %before;
+      left: 1%;
+    }
+
+    &__title {
+      width: 60%;
+      @include g.mq('sp') {
+        width: 95%;
+        margin: 0 auto;
+      }
+      img {
+        height: 550px;
+        @include g.mq('sp') {
+          height: 300px;
+        }
+      }
+    }
+
+    @at-root %__data {
+      width: 40%;
+      position: absolute;
+      top: 35%;
+      background-color: #fff;
+      padding: 5rem;
+      z-index: map-get(g.$z, data);
+    }
+    &__data {
+      @extend %__data;
+      right: 10%;
+      @include g.mq('tab') {
+        right: 0;
+        width: 50%;
+      }
+      @include g.mq('sp') {
+        width: 100%;
+        position: static;
+        padding: 3rem 2rem;
+      }
+    }    
+
+    &__data--flex {
+      @extend %__data;
+      left: 10%;
+      @include g.mq('tab') {
+        left: 0;
+        width: 50%;
+      }
+      @include g.mq('sp') {
+        width: 100%;
+        position: static;
+        padding: 3rem 2rem;
+      }
+    }
+
+    &__heading {
+      @include g.mq('sp') {
+        font-size: 2.2rem;
+      }
+    }
+  }

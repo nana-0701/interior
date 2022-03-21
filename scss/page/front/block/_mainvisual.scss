@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.mainvisual {
+    position: relative;
+    margin-bottom: 12rem;
+    width: 100%;
+    padding-top: 10rem;
+    @include g.mq('sp') {
+        margin-bottom: 8rem;
+        padding-top: 6rem;
+    }
+    &::before {
+        background-color: g.$bg1;
+        content: "";
+        display: block; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 660px;
+        width: 40%;
+        z-index: map-get(g.$z, bg);
+        @include g.mq('sp') {
+            content: none;
+        }
+    }
+    &__img {
+        width: 70%;
+        margin-left: 30%;
+        @include g.mq('sp') {
+            width: 100%;
+            margin-left: 0;
+        }
+        img {
+            height: 500px;
+            @include g.mq('sp') {
+                height: 350px;
+            }
+        }
+    }
+    &__heading {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 3.5rem;
+        padding: 1rem;    
+        @include g.mq('tab') {
+            font-size: calc(3rem + (1vw - 0.77rem) * 1.2136);
+        }
+        @include g.mq('sp') {
+            font-size: 3rem;
+            left: 5%;
+        }
+    }
+}
+  

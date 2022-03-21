@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.overview {
+    margin-bottom: 12rem;
+    @include g.mq('sp') {
+        margin-bottom: 8rem;
+    }
+    @include g.table;
+}
+
+  

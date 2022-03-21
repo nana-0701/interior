@@ -1,0 +1,74 @@
+.recruit {
+  margin-bottom: 12rem;
+}
+.recruit__heading {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .recruit__heading {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+}
+.recruit__wrapper {
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 95%;
+}
+.recruit__table {
+  border-top: 1px solid #dedede;
+  width: 100%;
+}
+.recruit__head {
+  background-color: #eaeaea;
+  border-bottom: 1px solid #fff;
+  line-height: 1.5em;
+  padding: 2rem;
+  text-align: left;
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .recruit__head {
+    width: 40%;
+  }
+}
+.recruit__data {
+  border-bottom: 1px solid #dedede;
+  line-height: 1.5em;
+  padding: 2rem;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .recruit__data {
+    padding: 5px;
+  }
+}
+
+.subvisual {
+  background: url("../../images/recruit-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  margin: 10rem 0 12rem;
+}
+@media screen and (max-width: 767px) {
+  .subvisual {
+    height: 160px;
+    margin: 6rem 0 8rem;
+  }
+}
+.subvisual__heading {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 220px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .subvisual__heading {
+    font-size: 2.2rem;
+    line-height: 160px;
+  }
+}

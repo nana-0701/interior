@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.news {
+    margin-bottom: 17rem;
+    @include g.mq('sp') {
+        margin-bottom: 8rem;
+    }
+    &__wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 95%;
+    }
+    &__heading {
+        text-align: center;
+        margin-bottom: 5rem; 
+        @include g.mq('sp') {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    &__item {
+        border-bottom: dotted 1px g.$border1;
+        padding: 2rem 0;
+        @include g.mq('sp') {
+            padding: 1rem 0;
+        }
+        time {
+            font-size: 1.2rem;
+            color: g.$font-color2;
+            margin-right: 8rem;
+            @include g.mq('sp') {
+                display: block;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+  
+  
+  

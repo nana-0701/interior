@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.form {
+    margin-bottom: 8rem;
+    &__wrapper {
+        max-width: g.$inner-width;
+        margin: 0 auto;
+        width: 95%;
+    }
+    &__list {
+        display: flex;
+        padding: 2rem 0;
+        border-bottom: 1px dotted g.$border2;
+        &:first-of-type {
+            border-top: 1px dotted g.$border2;
+        }
+        @include g.mq('sp') {
+            display: block;
+        }
+    }
+    &__title {
+        width: 30%;
+        padding: 2rem 0;
+        @include g.mq('sp') {
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+
+    @at-root %input {
+        color: g.$font-color1;
+        border: 1px solid g.$font-color1;
+        background-color: g.$bg3;
+        line-height: 60px;
+        height: 60px;
+        padding: 0 2rem;
+        @media screen and (max-width: 767px) {
+            padding: 0 1rem;
+            height: 50px;
+            line-height: 50px;
+        }
+        &::placeholder {
+            color: #ccc;
+        }
+    }
+    &__name {
+        width: 70%;
+        padding-left: 1.5rem;
+        @include g.mq('sp') {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+    &__name--list {
+        display: flex;
+        @include g.mq('sp') {
+            display: block;
+        }
+    }
+    &__name--item {
+        width: 50%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        label {
+            margin-right: 1rem;
+        }
+        input {
+            @extend %input;
+            max-width: 350px;
+            width: 83%;
+        }
+    }
+    &__name--item:first-of-type {
+        margin-right: 1.3rem;
+        @include g.mq('sp') {
+            margin: 0 0 2rem 0;
+        }
+    }
+    
+    &__ruby {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+    }
+    &__ruby--list {
+        display: flex;
+        @include g.mq('sp') {
+            display: block;
+        }
+    }
+    &__ruby--item {
+        width: 50%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        label {
+            margin-right: 1rem;
+        }
+        input {
+            @extend %input;
+            max-width: 350px;
+            width: 80%;
+        }
+    }
+    &__ruby--item:first-of-type {
+        @include g.mq('sp') {
+            margin-bottom: 2rem;
+        }
+    }
+            
+    &__email {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        input {
+            @extend %input;
+            width: 100%;
+        }
+    }
+    &__tel {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        input {
+            @extend %input;
+            width: 70%;
+        }
+    }
+    &__zip {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        input {
+            @extend %input;
+            max-width: 200px;
+            width: 50%;
+        }
+    }
+    &__pref {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        select {
+            color: g.$font-color1;
+            border: 1px solid g.$font-color1;
+            background-color: g.$bg3;
+            line-height: 60px;
+            height: 60px;
+            padding: 0 2rem;
+            max-width: 200px;
+            width: 100%;
+            @include g.mq('sp') {
+                padding: 0 1rem;
+                height: 50px;
+                line-height: 50px;
+            }
+            &::placeholder {
+                color: #ccc;
+            }
+        }
+    }
+    &__address {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        input {
+            @extend %input;
+            width: 100%;
+        }
+    }
+    &__text {
+        width: 70%;
+        @include g.mq('sp') {
+            width: 100%;
+        }
+        textarea {
+            color: g.$font-color1;
+            border: 1px solid g.$font-color1;
+            background-color: g.$bg3;
+            line-height: 2em;
+            padding: 2rem;
+            width: 100%;
+            @include g.mq('sp') {
+                padding: 1rem;
+            }
+            &::placeholder {
+                color: #ccc;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin: 5rem auto 0;   
+        input {
+            display: block;
+            width: 250px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            background-color: g.$font-color1;
+            border: 1px solid g.$font-color1;
+            margin: 0 1.5rem;
+            cursor: pointer;
+            transition: 0.3s ease all; 
+            &:hover {
+                background-color: transparent;
+                color: g.$font-color1;
+                transition: 0.3s ease all;            
+            }       
+        } 
+    }
+}
+

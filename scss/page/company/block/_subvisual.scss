@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.subvisual {
+    @include g.subvisual("company-bg.jpg");
+}
+
+      
+  

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+//inner width
+$inner-width: 1180px;
+
+//breakpoints
+$breakpoints: (
+  sp: "screen and (max-width: 767px)",
+  tab: "screen and (max-width: #{$inner-width - 1px})",
+  pc: "screen and (min-width: #{$inner-width})",
+);
+
+//image path
+$img-dir: "../../images/";
+
+//z-index
+$z: (
+ js-hamburger: 20,
+ js-header__menu: 15,
+ js-hamburger-bg: 10,
+ header: 5,
+ data: 2,
+ bg: -1,
+);
+
+// color 
+//main font color
+$font-color1: #333; 
+
+//index.html > .news__item > time
+$font-color2:  #949494; 
+
+//main background (index.html, footer)
+$bg1: #ec902e47; 
+
+//table background (company.html > overview, recruit.html > recruit)
+$bg2: #eaeaea;
+
+//background (contact.html > form)
+$bg3: #f5f5f5; 
+
+//index.html > news
+$border1: #dedede; 
+
+//contact.html > form
+$border2: #676767; 

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.recruit {
+    position: relative;
+    margin-bottom: 12rem;
+    @include g.mq('sp') {
+        margin-bottom: 6rem;
+    }
+    &::before {
+        content: "";
+        background: g.$bg1;
+        position: absolute;
+        top: -20%;
+        right: 0;
+        width: 45%;
+        height: 400px;
+        z-index: map-get(g.$z, bg);
+        @include g.mq('sp') {
+            content: none;
+        }
+    }
+    &__img {
+        width: 80%;
+        margin-right: 20%;
+        @include g.mq('sp') {
+            width: 100%;
+            margin-right: 0;
+        }
+        img {
+            height: 400px;
+            @include g.mq('sp') {
+                height: 300px;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            @include g.mq('sp') {
+                width: 100%;
+            }
+        }
+    }
+    &__heading {
+        a {
+            position: absolute;
+            top: 45%;
+            left: 33%;
+            padding: 0.7rem 2rem;
+            background: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            @include g.mq('sp') {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+  

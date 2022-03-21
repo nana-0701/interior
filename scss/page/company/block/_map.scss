@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.map {
+    margin-bottom: 12rem;
+    @include g.mq('sp') {
+        margin-bottom: 6rem;
+    }
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+

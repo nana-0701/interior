@@ -1,0 +1,161 @@
+.greeting {
+  margin-bottom: 12rem;
+}
+@media screen and (max-width: 767px) {
+  .greeting {
+    margin-bottom: 8rem;
+  }
+}
+.greeting__wrapper {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.greeting__inner {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
+@media screen and (max-width: 767px) {
+  .greeting__inner {
+    display: block;
+  }
+}
+.greeting__figure {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .greeting__figure {
+    margin: 0;
+    width: 100%;
+  }
+}
+.greeting__figure img {
+  height: 500px;
+}
+@media screen and (max-width: 767px) {
+  .greeting__figure img {
+    height: 300px;
+  }
+}
+.greeting__content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+}
+@media screen and (max-width: 767px) {
+  .greeting__content {
+    width: 100%;
+  }
+}
+.greeting__heading {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .greeting__heading {
+    font-size: 2rem;
+    margin: 2.5rem 0;
+  }
+}
+
+.map {
+  margin-bottom: 12rem;
+}
+@media screen and (max-width: 767px) {
+  .map {
+    margin-bottom: 6rem;
+  }
+}
+.map__wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+.map__wrapper iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.overview {
+  margin-bottom: 12rem;
+}
+@media screen and (max-width: 767px) {
+  .overview {
+    margin-bottom: 8rem;
+  }
+}
+.overview__wrapper {
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 95%;
+}
+.overview__table {
+  border-top: 1px solid #dedede;
+  width: 100%;
+}
+.overview__head {
+  background-color: #eaeaea;
+  border-bottom: 1px solid #fff;
+  line-height: 1.5em;
+  padding: 2rem;
+  text-align: left;
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .overview__head {
+    width: 40%;
+  }
+}
+.overview__data {
+  border-bottom: 1px solid #dedede;
+  line-height: 1.5em;
+  padding: 2rem;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .overview__data {
+    padding: 5px;
+  }
+}
+
+.subvisual {
+  background: url("../../images/company-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  margin: 10rem 0 12rem;
+}
+@media screen and (max-width: 767px) {
+  .subvisual {
+    height: 160px;
+    margin: 6rem 0 8rem;
+  }
+}
+.subvisual__heading {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 220px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .subvisual__heading {
+    font-size: 2.2rem;
+    line-height: 160px;
+  }
+}
